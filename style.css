@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+section {
+    flex-grow: 1;
+    width: 50%;
+    height: auto;
+    margin: 0;
+}
+
+
+/* Começo da Esquerda  */
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section h1 {
+    font-size: 45px;
+    color: #000000;
+}
+
+input[type="password"], input[type="text"], input[type="email"] {
+   border: 1px solid #000000;
+   margin: 5px;
+   height: 60px;
+   width: 450px;
+   font-size: 15px;
+   padding-left: 5px;
+}
+
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+.form button {
+    height: 60px;
+    cursor: pointer;
+    background-color: #0056FB;
+    color: #FFFFFF;
+    font-size: 19px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.area {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 100;
+}
+
+input::placeholder {
+    color: #999;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+/* Começo da direita  */
+
+.right {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: #0056FB;
+ color: #FFFFFF;
+
+ height: 100vh;
+}
+
+.right img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.subtitulo {
+    font-size: 40px;
+}
+
+.explicacao {
+    margin: 30px 20%;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin-top: 60px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    section {
+        width: 100%;
+        height: auto;
+    }
+
+    .left {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+}
