@@ -126,7 +126,7 @@ input::placeholder {
     margin: 30px 20%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 967px) {
     .container {
         margin-top: 60px;
         flex-direction: column;
@@ -145,5 +145,65 @@ input::placeholder {
         justify-content: center;
         margin: auto;
     }
+
+    section h1 {
+        font-size: 2rem;
+        color: #000000;
+    }
     
+    input[type="password"], input[type="text"], input[type="email"] {
+       border: 1px solid #000000;
+       margin: 5px;
+       height: 100%;
+       height: auto;
+       max-width: 300pxx;
+       width: 100%;
+       font-size: 15px;
+       padding-left: 5px;
+    }
+    
+    
+    .label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 10px;
+    }
+    .form button {
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+        cursor: pointer;
+        background-color: #0056FB;
+        color: #FFFFFF;
+        font-size: 19px;
+        border: 0px;
+        border-radius: 3px;
+    }
+    
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #0056FB;
+        color: #FFFFFF;
+       
+        height: 100vh;
+       }
+       
+       .right img {
+           width: 100%;
+           max-width: 280px;
+           height: auto;
+       }
+       
+       .subtitulo {
+           font-size: 30px;
+       }
+       
+       .explicacao {
+           margin: 20px 20%;
+       }
+
 }
